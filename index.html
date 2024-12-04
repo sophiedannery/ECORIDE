@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
+    <!-- Sass -->
     <link rel="stylesheet" href="scss/main.css">
 
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Hind+Madurai:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -21,42 +22,53 @@
 
     <header>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-            <a class="navbar-brand" href="/">EcoRide</a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- nav bar de Bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand ms-2" href="/">
+                <img class="logo-nav-bar" src="/Média/EcoRide_Logo2.png" alt="">
+            </a>
+            <!-- menu burger mobile -->
+            <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse ms-3" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="/">Accueil</a>
+                  <a class="nav-link text-dark" href="/">ACCUEIL</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Covoiturages</a>
+                  <a class="nav-link text-dark" href="#">COVOITURAGES</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link text-dark" href="#">CONTACT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Se connecter</a>
+                    <a class="nav-link text-dark" href="#">SE CONNECTER</a>
                 </li>
               </ul>
             </div>
-
           </nav>
         
 
     </header>
 
-    <main id="main-page">
+        <!-- le id 'main-page' pour le routage -->
+        <main id="main-page">
 
     </main>
 
-    <footer>
-        Le footer
+    <footer class="bg-dark text-white text-center footer">
+        <div class="row justify-content-center align-items-center text-center">
+            <div class="col-12 col-lg-4 mb-3">
+                <img class="footer-logo" src="/Média/EcoRide_Logo1.png" alt="">
+            </div>
+            <div class="col-12 col-lg-4">
+                <p>contact@ecoride.com</p>
+            </div>
+            <div class="col-12 col-lg-4">
+                <p><a href="#">Mentions légales</a></p>
+            </div>
+        </div>
     </footer>
     
     <script type="module" src="Router/router.js"></script>
