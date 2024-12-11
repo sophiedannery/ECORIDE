@@ -7,7 +7,6 @@ html{
     position: relative;
     min-height: 100%;
 }
-
 main{
     margin-bottom: 120px;
 }
@@ -15,12 +14,59 @@ main{
 
 /* Header */
 .logo-nav-bar{
-    height: 50px;
+    height: 40px;
     width: auto;
 }
-
 .nav-link{
     font-weight: bold;
+}
+
+
+
+/* Hero-scene */
+.hero-scene{
+    min-height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/Média/image\ \(20\).jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-scene-form{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 20px 20px 25px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 767px) {
+    .hero-scene-form{
+        width: 80%;
+    }
+    .hero-scene-content{
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+    }
+}
+@media (min-width: 768px) {
+    .hero-scene-form{
+        width: 30%;
+    }
+    .hero-scene-content{
+        padding-top: 100px;
+    }
+}
+
+.btn-shadow{
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Paragraphe 1 */
+.para1-titre{
+    font-weight: bolder;
 }
 
 
@@ -31,7 +77,6 @@ footer.footer{
     bottom: 0;
     width: 100%;
 }
-
 .footer-logo{
     width: 64px;
     height: auto;
